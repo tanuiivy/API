@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Delicious Restaurant</h1>
+
+    <div class="menu-section">
+        <h2>Menu</h2>
+        <div class="menu-item" data-price="10">
+            <p>Pizza - $10</p>
+            <button class="add-to-order">Add to Order</button>
+        </div>
+        <div class="menu-item" data-price="15">
+            <p>Burger - $15</p>
+            <button class="add-to-order">Add to Order</button>
+        </div>
+        <div class="menu-item" data-price="8">
+            <p>Pasta - $8</p>
+            <button class="add-to-order">Add to Order</button>
+        </div>
+    </div>
+
+    <div class="order-section">
+        <h2>Your Order</h2>
+        <ul id="orderList"></ul>
+        <p>Total: $<span id="totalPrice">0</span></p>
+        <button id="placeOrder">Place Order</button>
+    </div>
+
+    <div class="review-section">
+        <h2>Leave a Review</h2>
+        <textarea id="reviewInput" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit Review</button>
+
+        <h3>Reviews:</h3>
+        <ul id="reviewList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
