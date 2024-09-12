@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Blog Platform</h1>
+
+    <div class="create-post-section">
+        <h2>Create a Blog Post</h2>
+        <input type="text" id="titleInput" placeholder="Title"><br><br>
+        <textarea id="contentInput" placeholder="Content"></textarea><br><br>
+        <select id="categoryInput">
+            <option value="Technology">Technology</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="Travel">Travel</option>
+        </select><br><br>
+        <button id="submitPost">Submit Post</button>
+    </div>
+
+    <div class="filter-section">
+        <h2>Filter Posts by Category</h2>
+        <select id="filterCategory">
+            <option value="All">All</option>
+            <option value="Technology">Technology</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="Travel">Travel</option>
+        </select>
+    </div>
+
+    <div class="posts-section">
+        <h2>Blog Posts</h2>
+        <ul id="postList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
